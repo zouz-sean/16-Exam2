@@ -154,7 +154,7 @@ def problem2(n, seq):
       :type seq:  [int]
     """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
     size = len(seq)
@@ -168,7 +168,7 @@ def problem2(n, seq):
             if count == 3:
                 break
     if count < 3:
-        return 'Too Few'
+        return 'Too few'
     return result
 
 
