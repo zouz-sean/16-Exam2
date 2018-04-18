@@ -149,7 +149,7 @@ def problem2(n, seq):
       problem2( 8,  [100, 100] )                         returns 'Too few'
       problem2( 8,  [1, 2] )                             returns 'Too few'
 
-    Type hints:
+    Type hints
       :type n:    int
       :type seq:  [int]
     """
