@@ -2,8 +2,8 @@
 Exam 1, problem 2.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.  March 2018.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Zhengxiao Zou.  March 2018.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import time
 import testing_helper
@@ -157,6 +157,20 @@ def problem2(n, seq):
     # TODO: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+    size = len(seq)
+    threshold = n
+    result = []
+    count  = 0
+    for k in range (size):
+        if seq[k] < threshold:
+            result.append(seq[k])
+            count = count + 1
+            if count == 3:
+                break
+    if count < 3:
+        return 'Too Few'
+    return result
+
 
 
 ###############################################################################
